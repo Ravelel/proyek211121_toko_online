@@ -6,14 +6,16 @@ if($_POST){
     $deskripsi=$_POST['deskripsi'];
 
     $harga=$_POST['harga'];
+
+    $foto_produk=$_POST['foto_produk'];
     
 
     if(empty($_POST['nama_produk'])){
-        echo "<script>alert('nama produk tidak boleh kosong');location.href='akses.php';</script>";
+        echo "<script>alert('nama produk tidak boleh kosong');location.href='tambah_produk.php';</script>";
     } elseif(empty($_POST['deskripsi'])){
-        echo "<script>alert('deskripsi tidak boleh kosong');location.href='akses.php';</script>";
+        echo "<script>alert('deskripsi tidak boleh kosong');location.href='tambah_produk.php';</script>";
     } elseif(empty($_POST['harga'])){
-        echo "<script>alert('harga tidak boleh kosong');location.href='akses.php';</script>";
+        echo "<script>alert('harga tidak boleh kosong');location.href='tambah_produk.php';</script>";
     } else {
         include "koneksitoko.php";
 
